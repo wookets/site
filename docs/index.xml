@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on Wookets Wove</title>
+    <link>/docs/</link>
+    <description>Recent content in Docs on Wookets Wove</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Mar 2018 22:09:55 -0500</lastBuildDate>
+    
+	<atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Hugo</title>
+      <link>/docs/how-to-hugo/</link>
+      <pubDate>Tue, 13 Mar 2018 22:09:55 -0500</pubDate>
+      
+      <guid>/docs/how-to-hugo/</guid>
+      <description>Intro to Hugo Hugo is a static generator. The history of static
+###</description>
+    </item>
+    
+  </channel>
+</rss>
