@@ -10,7 +10,7 @@ install:
 
 # Build the website
 script:
-  - ./binaries/hugo --theme=kube
+  - binaries/hugo --theme=kube
 
 # Deploy to GitHub pages
 deploy:
