@@ -24,3 +24,7 @@ Follow the [hugo quick setup](https://gohugo.io/getting-started/quick-start/).
 Installing a theme can be a little tricky. I recommend following the quick setup method. However, be aware this will clone down a git repo, so you'll want to wipe out .git from that, otherwise it won't commit and you may be wondering why only have your static files are building when you go to deploy. 
 
 Once you have your theme installed you'll need to pull files up to your root project and recreate some folders. Essentially, if the theme doesn't find the file in the root, it will default back down into the theme folder. In this way, you can own the theme without touching the original files. 
+
+### Adding a new post or doc
+
+Sure, you can manually create new blog and doc files, but you should just use the command line "hugo new --king blog blog/first-post.md"

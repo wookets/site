@@ -1,0 +1,12 @@
++++
+title = "Jackson JSON Deserializer using Groovy"
+date = 2012-02-22T18:14:00Z
+updated = 2012-02-23T14:54:59Z
+tags = ["Code"]
+blogimport = true 
+[author]
+	name = "Sean Wesenberg"
+	uri = "https://plus.google.com/111523202047342274226"
++++
+
+<br />This took me about half a day to do... Jackson's documentation in certain places is a scattered shot of different ways based on version # and usually ending in half complete sentences or small specific pages that aren't quite linked together in a relational sense. Jackson 2.0, I imagine, will further cludge the documentation due to refactors. But, by and large, it really is quite simple to write a deserializer or a serializer for that matter. It's just one class wrapped in a SimpleModule. And that's as easy as it should be.<br /><br />The below deserializer is special because it allows you to pass in a map of aliases (name, class) and have the deserializer handle both untyped and typed objects. Which, apparently, is not supported by Jackson natively... not sure why. It ALSO supports nested untyped and typed objects allowing you to mix and match. If you look at the test cases down below, we pass in a root json object that is not typed and within that object is a typed object which becomes a fully fledged java object. Now, you could probably write the below examples in java (or maybe not since that's why it's not in Jackson by default), but groovys dynamic objects (add properties at runtime) allow this code to be straightforward. Performance hit, positively. But, sometimes you just have to tell the company to buy bigger servers. At least until java / groovy performance catches up to this type of scenario.<br /><br /><br />Deserializer:<br /><br /><script src="https://gist.github.com/1888576.js?file=TypedJsonDeserializer.groovy"></script><br />Usage:<br /><br /><br /><script src="https://gist.github.com/1888576.js?file=JsonMapperTest.groovy"></script><br /><br />Mix-in: <br /><br /><br /><script src="https://gist.github.com/1888576.js?file=JacksonType.java"></script><br /><br />References:<br /><br /><a href="http://wiki.fasterxml.com/JacksonFeatureModules">http://wiki.fasterxml.com/JacksonFeatureModules</a><br /><br /><a href="http://wiki.fasterxml.com/JacksonHowToCustomDeserializers">http://wiki.fasterxml.com/JacksonHowToCustomDeserializers</a><br /><br /><a href="http://wiki.fasterxml.com/JacksonInFiveMinutes">http://wiki.fasterxml.com/JacksonInFiveMinutes</a>

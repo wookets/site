@@ -1,0 +1,12 @@
++++
+title = "Flex 4 Composite Component (templating)"
+date = 2011-06-23T12:01:00Z
+updated = 2011-06-23T12:01:47Z
+tags = ["Code"]
+blogimport = true 
+[author]
+	name = "Sean Wesenberg"
+	uri = "https://plus.google.com/111523202047342274226"
++++
+
+Sorry, no example, just some quick code...<br /><br />Here is how you use the component which is going to facade our complexity...<br /><br /><pre class="brush:as3">&lt;components:FormItem label=&quot;Name:&quot; help=&quot;e.g. Increase Revenue&quot;&gt;<br />        &lt;s:TextInput text=&quot;@{pm.selectedGoal.name}&quot; maxChars=&quot;160&quot; width=&quot;100%&quot;/&gt;<br />      &lt;/components:FormItem&gt;<br /></pre><br />And what is happening behind the scenes...<br /><br /><pre class="brush:as3">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;<br />&lt;s:Group xmlns:fx=&quot;http://ns.adobe.com/mxml/2009&quot; xmlns:s=&quot;library://ns.adobe.com/flex/spark&quot;<br />         xmlns:mx=&quot;library://ns.adobe.com/flex/mx&quot; width=&quot;100%&quot;&gt;<br />  <br />  &lt;fx:Declarations&gt;<br />    &lt;fx:String id=&quot;label&quot;/&gt;<br />    &lt;fx:String id=&quot;help&quot;/&gt;<br />  &lt;/fx:Declarations&gt;<br />  <br />  &lt;fx:Script&gt;<br />    &lt;![CDATA[<br />      public function set content(value:Array):void {<br />        contentGroup.mxmlContent = value;<br />      }<br />    ]]&gt;<br />  &lt;/fx:Script&gt;<br />  <br />  &lt;s:layout&gt;<br />    &lt;s:VerticalLayout paddingBottom=&quot;15&quot;/&gt;<br />  &lt;/s:layout&gt;<br />  <br />  &lt;s:Label text=&quot;{label}&quot; styleName=&quot;formlabel&quot;/&gt;<br />  &lt;s:Group id=&quot;contentGroup&quot; width=&quot;100%&quot;/&gt;<br />  &lt;s:Label text=&quot;{help}&quot; styleName=&quot;formhelp&quot;/&gt;<br />  <br />  &lt;fx:Metadata&gt;<br />    [DefaultProperty(&quot;content&quot;)]<br />  &lt;/fx:Metadata&gt;<br />  <br />&lt;/s:Group&gt;<br /></pre><br />Why is this important? We are taking a mxml based approach to building a composition of components that 'feels' more natural than skinning or writing as3. See the reference below for more complexity. Any UI language these days should have first class support for smarty-like (php) declarative templating. <br /><br />References<br /><br /><a href="http://blog.gorillalogic.com/2010/07/15/building-flex-4-containers-with-multiple-content-areas/">http://blog.gorillalogic.com/2010/07/15/building-flex-4-containers-with-multiple-content-areas/</a>

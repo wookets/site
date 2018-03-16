@@ -4,6 +4,7 @@ title = "Wookets Wove"
 theme = "kube"
 description = "blue v blue"
 Paginate = 4
+pygmentsUseClasses=true
 [Params]
   RSSLink = "/index.xml"
   author = "wookets" # add your company name
