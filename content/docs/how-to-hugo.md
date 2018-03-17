@@ -10,8 +10,7 @@ toc = true
 
 ### Disclaimer
 
-I had some help;
-* https://www.metachris.com/2017/04/continuous-deployment-hugo---travis-ci--github-pages/
+I had some [help](https://www.metachris.com/2017/04/continuous-deployment-hugo---travis-ci--github-pages/).
 
 ### Intro to Hugo
 
