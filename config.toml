@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Wookets Wove"
 theme = "kube"
 description = "blue v blue"
-Paginate = 4
+Paginate = 25
 pygmentsUseClasses=true
 [Params]
   RSSLink = "/index.xml"
