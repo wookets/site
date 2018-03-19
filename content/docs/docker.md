@@ -17,15 +17,27 @@ The official [docker website](https://www.docker.com/what-docker) gives you a go
 
 [Downlaod Docker](https://www.docker.com/community-edition#/download) from the [Docker Store](https://store.docker.com/). You'll want to just grab the [community edition](https://store.docker.com/editions/community/docker-ce-desktop-mac). 
 
-Once it finishes downloading, you'll drag it into applications as you normally would with other OSX applications. Command + Spacebar "Docker" should give you the docker.app once it is done indexing. 
+Once it finishes downloading, you'll drag it into applications as you normally would with other OSX applications. Command + Spacebar "Docker" should give you the docker.app once it is done indexing. You can also open up the terminal and start using docker commands. 
 
 ![Docker OSX Install](http://cdn.wookets.com/images/docker/docker-osx-install.png "Docker OSX Install")
 
-The main way to interact with Docker on OSX is via the flyout menu in the upper-right corner. 
+### Usage
+
+Docker provides a decent GUI to interact with it on OSX via a flyout menu in the system tray in the upper-right corner. 
 
 ![Docker Menu Flyout](http://cdn.wookets.com/images/docker/docker-menu-flyout.png "Docker Logo Flyout")
 
-Of course, this install also installs the [Docker command line](https://docs.docker.com/engine/reference/commandline/cli/). 
+Also installed is the [Docker command line](https://docs.docker.com/engine/reference/commandline/cli/), which is what will be the main interaction point with docker containers, starting and stopping, etc.
+
+```bash
+docker --version
+```
+
+Let's go for a [hello world container](https://docs.docker.com/docker-for-mac/).
+
+```bash
+docker run hello-world
+```
 
 
 
