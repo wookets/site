@@ -37,6 +37,7 @@ Let's go for a [hello world container](https://docs.docker.com/docker-for-mac/).
 
 ```bash
 docker run hello-world
+docker run -d -p 80:80 --name webserver nginx
 ```
 
 
