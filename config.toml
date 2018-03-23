@@ -13,13 +13,17 @@ pygmentsUseClasses=true
   email = "wookets@gmail.com"
 
 [[menu.main]]
-    name = "Docs"
+    name = "Projects"
     weight = -100
-    url = "/docs/"
+    url = "/projects/"
 [[menu.main]]
     name = "Blog"
     weight = -100
     url = "/blog/"
+[[menu.main]]
+    name = "Docs"
+    weight = -100
+    url = "/docs/"
 [[menu.main]]
     name = "Faq"
     weight = -100
