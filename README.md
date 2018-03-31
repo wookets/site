@@ -5,8 +5,12 @@ This is simply the source code for wookets.github.io. This project is used to ke
 
 ## Usage
 
-How to make a new post or doc or poject. 
+To see stuff locally;
+```bash
+hugo serve
+```
 
+To make a new document;
 ```bash
 hugo new projects/patent-buddy.md
 ```
