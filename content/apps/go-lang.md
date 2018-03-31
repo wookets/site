@@ -1,11 +1,11 @@
 +++
-title = "Go Sandbox"
-description = ""
+title = "Go REST API"
+description = "A REST API written in go-lang"
 author = "wookets"
 date = 2018-03-21T22:31:29-05:00
 weight = 20
 draft = false
-bref = ""
+bref = "A REST API written in go-lang"
 toc = true
 +++
 

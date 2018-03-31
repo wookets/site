@@ -13,9 +13,9 @@ pygmentsUseClasses=true
   email = "wookets@gmail.com"
 
 [[menu.main]]
-    name = "Projects"
+    name = "Apps"
     weight = -100
-    url = "/projects/"
+    url = "/apps/"
 [[menu.main]]
     name = "Blog"
     weight = -100
@@ -28,3 +28,7 @@ pygmentsUseClasses=true
     name = "Faq"
     weight = -100
     url = "/faq/"
+[[menu.main]]
+    name = "Writing"
+    weight = -100
+    url = "/writing/"
